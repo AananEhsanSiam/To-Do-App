@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-slate-600">
+    <div class="container mx-auto">
+      <div
+        class="bg-slate-800 card w-[50%] mx-auto mt-20 rounded-lg pb-10 h-[820px]"
+      >
+        <p
+          class="cardTitle text-white text-4xl flex items-center justify-center py-5"
+        >
+          To-Do List
+        </p>
+        <div class="cardBody flex items-center justify-center">
+          <form action="" class="todoForm mb-5">
+            <input
+              type="text"
+              placeholder="Type here . . ."
+              id="inputTodo"
+              required
+              class="rounded-lg p-2 w-[500px]"
+            />
+            <button
+              type="submit"
+              class="btn text-white border rounded-lg bg-orange-400 p-2 w-36"
+            >
+              Add Task
+            </button>
+          </form>
+        </div>
+        <p class="message mx-[58px]"></p>
+        <div class="max-h-[610px] overflow-scroll">
+          <ul class="lists mx-[58px]"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
